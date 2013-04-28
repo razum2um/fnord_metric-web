@@ -1,0 +1,17 @@
+//= require fnordmetric.js
+//= require fnordmetric.util.js
+//= require fnordmetric.ui.js
+//= require fnordmetric.timeline_widget.js
+//= require fnordmetric.numbers_widget.js
+//= require fnordmetric.bars_widget.js
+//= require fnordmetric.pie_widget.js
+//= require fnordmetric.toplist_widget.js
+//= require fnordmetric.html_widget.js
+//= require fnordmetric.realtime_timeline_widget.js
+//= require fnordmetric.timeseries_widget.js
+//= require fnordmetric.overview_view.js
+//= require fnordmetric.gauge_view.js
+//= require fnordmetric.dashboard_view.js
+//= require fnordmetric.session_view.js
+//= require fnordmetric.gauge_explorer.js
+//= require fnordmetric-core.js

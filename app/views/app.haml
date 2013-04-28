@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title FnordMetric
+    = javascript_include_tag 'fnord_metric/contrib'
+    = javascript_include_tag 'fnord_metric'
+    = stylesheet_link_tag 'fnord_metric'
+
+  %body
+    #app.clearfix(style="overflow:hidden;")
+
+    #preload
+      %img(src="/img/loader_white.gif")
+
+:javascript
+  $(document).ready(function(){
+    FnordMetric.init(#{current_namespace.to_json});
+  });
