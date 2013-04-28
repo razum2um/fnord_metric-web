@@ -2,9 +2,9 @@
 %html
   %head
     %title FnordMetric
-    = javascript_include_tag 'fnord_metric/contrib'
-    = javascript_include_tag 'fnord_metric'
-    = stylesheet_link_tag 'fnord_metric'
+    %script{src: u('assets/fnord_metric/contrib.js')}
+    %script{src: u('assets/fnord_metric.js')}
+    %link{rel: 'stylesheet', href: u('asstes/fnord_metric.css')}
 
   %body
     #app.clearfix(style="overflow:hidden;")
