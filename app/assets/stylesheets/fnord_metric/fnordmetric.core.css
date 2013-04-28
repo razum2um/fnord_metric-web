@@ -1,6 +1,6 @@
 body, html{ height:100%; padding:0px;}
 body {
-  background: url('img/head.png') 0 -21px repeat-x fixed #2E3133;
+  background: image-path('fnord_metric/head.png') 0 -21px repeat-x fixed #2E3133;
   color:#333;
   margin:0;
   padding:0;
@@ -110,7 +110,7 @@ table th{ background:#efefef; }
 #sidebar{ width:220px; position:fixed; background:#3B3E45; height:1500px; padding-top:15px; }
 .navbar{
   height:49px;
-  background:url('img/navbar.png');
+  background: image-path('fnord_metric/navbar.png');
   position:absolute;
   z-index: 11004;
   top:0;
@@ -135,7 +135,7 @@ a.button{
   float:right;
   line-height:25px;
   height:25px;
-  background:url('img/navbar_btn.png');
+  background: image-path('fnord_metric/navbar_btn.png');
   margin-right:30px;
   padding:0 20px;
   margin-top:12px;
@@ -260,7 +260,7 @@ a.button.datepicker_sa i {
 .ui_value.left{ float:left; }
 
 .ui_toplist{ min-height:300px; }
-.ui_toplist.loading{ opacity:0.5; background:url('/img/loader.gif') no-repeat center center;  }
+.ui_toplist.loading{ opacity:0.5; background: image-path('fnord_metric/loader.gif') no-repeat center center;  }
 
 .ui_toplist .toplist_item{ border-bottom:1px solid #dedede; height:42px; display:block; }
 .ui_toplist .toplist_item:hover{ background:#fff; }
@@ -348,7 +348,7 @@ text-shadow: 1px 0px 2px rgba(255, 255, 255, 1);
   text-decoration:none;
   vertical-align:top;
   white-space:nowrap;
-  background:url('img/navbar_btn.png');
+  background: image-path('fnord_metric/navbar_btn.png');
 }
 
 .headbar .button:hover{background:#e8e8e8;border-bottom-color:#999;-webkit-box-shadow:0 1px 0 rgba(0, 0, 0, .05)}
@@ -611,7 +611,7 @@ h1.head{ margin-top:70px; }
 .loader_white{
   height: 32px;
   width: 32px;
-  background: url('/img/loader_white.gif') no-repeat center center;
+  background: image-path('fnord_metric/loader_white.gif') no-repeat center center;
 }
 
 
