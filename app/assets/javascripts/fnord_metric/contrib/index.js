@@ -2,3 +2,4 @@
 //= require ./jquery-ui.min.js
 //= require ./jquery.maskedinput.js
 //= require ./jquery.combobox.js
+//= require ./faye.js

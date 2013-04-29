@@ -38,6 +38,27 @@ module FnordMetric
         #redirect "#{path_prefix}/#{@namespaces.keys.first}"
       end
 
+      get '/stream' do
+        if WebSocket.websocket?(env)
+          ws = WebSocket.new(env)
+
+          ws.onclose = lambda do |event|
+            p [:close, event.code, event.reason]
+            ws = nil
+          end
+
+          # Return async Rack response
+          ws.rack_response
+        else
+          # standart Rack
+          reactor = Reactor.new
+          binding.pry
+          reactor.execute(self, message).each do |m|
+            self.send m.to_json
+          end
+        end
+      end
+
       get '/:namespace' do
         pass unless current_namespace
         current_namespace.ready!(@redis)

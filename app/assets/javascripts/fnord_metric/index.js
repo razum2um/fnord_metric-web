@@ -1,3 +1,4 @@
+//= require ./fnordmetric-ui.js
 //= require ./fnordmetric.js
 //= require ./fnordmetric.util.js
 //= require ./fnordmetric.ui.js
