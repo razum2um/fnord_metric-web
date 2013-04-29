@@ -1,6 +1,10 @@
 require "sinatra"
 require "sprockets"
-require "sinatra/reloader" if development?
+if development?
+  require "sinatra/reloader"
+  require "pry-debugger"
+  require "pry-stack_explorer"
+end
 require "fnord_metric/web"
 
 map '/assets' do

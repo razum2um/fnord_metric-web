@@ -27,6 +27,7 @@ module FnordMetric
       def initialize(opts = {})
         @opts = FnordMetric.options(opts)
 
+        binding.pry
         @namespaces = FnordMetric.namespaces
         @redis = Redis.connect(:url => @opts[:redis_url])
 
@@ -34,8 +35,7 @@ module FnordMetric
       end
 
       get '/' do
-        haml :app
-        #redirect "#{path_prefix}/#{@namespaces.keys.first}"
+        redirect "#{path_prefix}/#{@namespaces.keys.first}"
       end
 
       get '/stream' do
